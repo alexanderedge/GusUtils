@@ -81,7 +81,6 @@
 - (id)initFromAssetURL:(NSURL*)assetURL {
 
     if ((self = [self init])) {
-        NSURL* assetURL = nil;
         ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
         [library assetForURL:assetURL 
                  resultBlock:^(ALAsset *asset)  {
